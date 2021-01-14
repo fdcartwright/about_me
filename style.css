@@ -1,5 +1,7 @@
 body {
     background-color: lightblue;
+    width: 80%;
+    margin: auto;
 }
 header {
     padding: 20px;
@@ -22,4 +24,12 @@ main p {
 footer {
     padding: 20px;
     text-align: center;
+}
+
+.listHeader {
+    margin: 20px;
+}
+
+.topTenList {
+    margin: 20px;
 }
