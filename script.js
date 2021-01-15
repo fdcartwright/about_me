@@ -6,7 +6,11 @@ var gameCounter = 0
    alert('Alright ' + userName + ', let\'s go! Click OK to start question 1.');
     console.log('The users name is ' + userName + ' and they have started the game.');
 
+
+
 // game question 1
+function aboutmeOne() {
+    
     var danCity = prompt('Does Dan live in Bellevue, WA?');
     
     if (danCity) {
@@ -23,8 +27,12 @@ var gameCounter = 0
             alert('Sorry '+ userName + ', that was not correct. Dan lives in Bellevue. Press OK to continue to question 2.');
         }
     }
+    }
+    aboutmeOne();
+
 
     //game question 2
+function aboutmeTwo() {
     var danCollege = prompt('Did Dan go to College at WSU?');
     if (danCollege.toLowerCase() === 'no') {
         gameCounter++;
@@ -38,8 +46,12 @@ var gameCounter = 0
         //console.log('Sorry '+ userName + ', that was not correct. Dan went to Bellevue College. Press OK to continue to question 3.');
         alert('Sorry '+ userName + ', that was not correct. Dan went to Bellevue College. Press OK to continue to question 3.');
     }
+}
+aboutmeTwo();
 
+ 
     //game question 3
+function aboutmeThree() {
     var danCode = prompt('Does Dan want to master JavaScript at CodeFellows?');
     if (danCode.toLowerCase() === 'yes') {
         gameCounter++;
@@ -53,8 +65,12 @@ var gameCounter = 0
         //console.log('Sorry '+ userName + ', that was not correct. Dan does want to master JavaScript at CodeFellows. Press OK to continue to question 4.');
         alert('Sorry '+ userName + ', that was not correct. Dan does want to master JavaScript at CodeFellows. Press OK to continue to question 4.');
     }
+}
+aboutmeThree();
+
 
     //game question 4
+function aboutmeFour() {
     var danEmployment = prompt('Is Dan\'s prior employment in Real Estate?');
     if (danEmployment.toLowerCase() === 'yes') {
         gameCounter++;
@@ -68,8 +84,12 @@ var gameCounter = 0
         //console.log('Sorry '+ userName + ', that was not correct. Dan lives in Bellevue. Press OK to continue to question 2.');
         alert('Sorry '+ userName + ', that was not correct. Dan lives in Bellevue. Press OK to continue to question 2.');
     }
+}
+aboutmeFour();
     
+
 //game question 5
+function aboutmeFive() {
     var danTech = prompt('Did Dan manage the online marketing at New Tier Real Estate?');
     if (danTech.toLowerCase() === 'yes') {
         gameCounter++;
@@ -83,8 +103,11 @@ var gameCounter = 0
         //console.log('Sorry '+ userName + ', that was not correct. Dan did manage the online marketing at New Tier Real Estate. Press OK to continue to finish.');
         alert('Sorry '+ userName + ', that was not correct. Dan did manage the online marketing at New Tier Real Estate. Press OK to continue to finish.');
     }
+}
+aboutmeFive();
 
 //game question 6
+function aboutmeSix() {
 for (i = 0; i < 4; i++){
 var userGuess = prompt(userName + ', Can you guess how many countries has Dan been to?')
 
@@ -102,8 +125,12 @@ var userGuess = prompt(userName + ', Can you guess how many countries has Dan be
         alert('The correct number is 3.');
     }
 }
+}
+aboutmeSix();
 
-game question 7
+
+// game question 7
+function aboutmeSeven(); {
 var possibleAnswers = ['france', 'italy', 'fiji', 'australia', 'costa rica', 'new zealand', 'puerto rico', 'panama', 'columbia', 'cuba'];
 
 var maximumTries = 6;
@@ -134,3 +161,6 @@ while(currentTurn < maximumTries){
     }
 }
 alert(userName + ', your total score is ' + gameCounter + ' out of 7.');
+}
+
+aboutmeSeven();
